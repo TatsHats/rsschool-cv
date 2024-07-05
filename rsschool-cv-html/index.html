@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/img/favicon.png" />
+    <link rel="icon" href="assets/img/favicon.png">
 </head>
 
 <body>
@@ -13,11 +13,12 @@
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#contacts" class="nav-link">My Contact</a></li>
-                <li class="nav-item"><a href="#summary" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="#profile" class="nav-link">About Me</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                 <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
                 <li class="nav-item"><a href="#code" class="nav-link">Code</a></li> 
+                <li class="nav-item"><a href="#projects" class="nav-link">My projects</a></li>
             </ul>
         </nav>
     </header>
@@ -28,12 +29,14 @@
                 <img src="assets/img/123.jpg" alt="My foto">
             </div>
             
-            <section class="section" id="contact">
-                <h2 class="left-title">My contact info:</h2>
+            <section class="section" id="contacts">
+                <h2 class="left-title">My contact info</h2>
                 <ul class="contacts-list">
+                    <li>Vilnius, Lithuania</li>
                     <li>Telegram: @TatsHats</li>
                     <li>Viber: +375336642017</li>
                     <li>E-mail: 6642017@gmail.com</li>
+                    <li>Discord: @tats_hats</li>
                 </ul>
             </section>        
             
@@ -62,14 +65,15 @@
 
             <section class="section" id="profile">
                 <h2 class="right-title">About Me</h2>
-                <div class="about-me">
+                <div class="text-right-column">
                     <p> I have a higher education in economics. I possess an excellent level of computer skills, am a quick learner, and have strong oral and written communication abilities. I approach any assigned tasks carefully and responsibly. I have no military obligations and am absolutely non-confrontational and pleasant to talk to.</p>
                 </div>
             </section>        
             
             <section class="section" id="skills">
                 <h2 class="right-title">My skills</h2>
-                <ul class="skills-list">Confident knowledge of C# (diploma available);
+                <ul class="skills-list">
+                    <li>Confident knowledge of C# (diploma available);</li>
                     <li>Basic knowledge of C++ and JavaScript;</li>
                     <li>Basic knowledge of MQL4 (currently learning);</li>
                     <li>Understanding of OOP principles;</li>
@@ -82,19 +86,44 @@
             </section>
 
             <section class="section" id="code">
-                <h2 class="right-title">Code example:</h2>
-                <p class="example">Пример JavaScript кода.</p>
-                <p class="example">Реализовать функцию, которая объединяет все числа из диапазона в строку: (даны числа 5 и 10 - ответ должен быть 5678910).</p>
-                <div class="code-example">
-                    <iframe src="Example.txt" width="100%" height="100%" frameborder="0"></iframe>
+                <h2 class="right-title">Code example</h2>
+                <p class="text-right-column">Example of JavaScript code.</p>
+                <p class="text-right-column">Implement a function that concatenates all numbers in a range into a string: (given the numbers 5 and 10, the result should be 5678910).</p>
+                <pre class="code-example">
+                    <code>
+                    const joinNumbersRange = (firstNumber, lastNumber) => {
+                        let result = '';
+                        let i = firstNumber;
+                        while (i <= lastNumber) {
+                            result = `${result}${i}`;
+                            i = i + 1;
+                        }
+                        return result;
+                    }
+                    </code>
+                </pre>
+            </section>
+            
+            <section class="section" id="projects">
+                <h2 class="right-title">My projects</h2>
+                <p class="text-right-column">Examples of completed educational projects:</p>
+                <div class="projects-example">
+                    <a class="foto-project" href="https://github.com/TatsHats/Examples-of-work/tree/main/10%20CSS/1">
+                        <img src="assets/img/project_1.png" alt="project_1">
+                    </a>
+                    <a class="foto-project" href="https://github.com/TatsHats/Examples-of-work/tree/main/10%20CSS/2">
+                        <img src="assets/img/project_2.png" alt="project_2">
+                    </a>
                 </div>
             </section>            
         </div>
     </main>
 
     <footer>
-        <a class="GH" href="https://github.com/TatsHats" alt="My GitHub">My GitHub</a>
-        <a class="logo" href="https://rs.school/courses/javascript-ru"><img src="assets/img/logo RS.png" alt="logo Rolling Scopes School"></a>
+        <a class="github" href="https://github.com/TatsHats">GitHub page</a>
+        <a class="logo" href="https://rs.school/courses/javascript-ru">
+            <img src="assets/img/logo-RS.png" alt="logo Rolling Scopes School">
+        </a>
         <p>2024</p>
     </footer>
 </body>
