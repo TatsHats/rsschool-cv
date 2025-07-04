@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600&display=swap');
 
 :root {
-    --bg-dark: #12342C;
+    --bg-dark: #131313;
     --bg-light: #ffffff;
     --neon-purple: #ed5ff7;
     --neon-red: #ff6b95;
@@ -28,8 +28,10 @@ html {
 
 .page-wrapper {
     max-width: 1200px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
 }
+
+
 /*-------------- header settings -------------*/
 header {
     width: 100%;
@@ -38,7 +40,19 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     color: white;
+    position: relative;
 }
+
+header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 65%;
+    background-color: var(--neon-purple);
+    right: 0;
+    bottom: 0;
+  }
 
 .nav {
     display: flex;
@@ -50,15 +64,17 @@ header {
 
 .nav-list {
     list-style-type: none;
-    padding: 0;
+    padding: 0 0 20px 0;
+    width: 100%;
     margin: 0;
     display: flex;
+    justify-content: center;
     cursor: pointer;
     border-bottom: 3px solid var(--neon-purple);
 }
 
 .nav-item {
-    margin: 0 25px;
+    margin: 0 3.5%;
 }
 
 .nav-link {
@@ -69,21 +85,44 @@ header {
 .nav-link:hover {
     text-decoration: underline;
     color: var(--neon-purple);
+    font-weight: bold;
     box-shadow: 0 5px 10px -5px var(--neon-purple);
 }
 
 .foto-name {
     display: flex;
+    width: 100%;
     align-items: end;
-    margin-left: 50px;
+    padding: 20px 20px 0 20px;
+}
+
+.foto {
+    padding: 10px 10px 5px 10px;
+    border-radius: 200px 200px 0 200px;
+    background-color: var(--neon-purple);
+    margin-right: 50px;
 }
 
 .foto img {
-    width: 200px;
+    width: 360px;
     height: auto;
     padding: 0;
-    margin: 0 0 0 50px;
+    border-radius: 180px 180px 0 180px;
 }
+
+.name {
+    font-size: 3.3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ .job {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 120px;
+}
+
 
 /*--------------- main settings --------------*/
 main {
@@ -92,49 +131,54 @@ main {
 }
 
 .left-column {
-    width: 35%;
+    padding: 20px 30px 20px 20px;
+    width: 400px;
     background: var(--bg-dark);
     box-sizing: border-box;
-}
-
-.right-column {
-    background-color: var(--bg-light );
-    width: 65%;
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-
-.name {
-    text-align: center;
-    margin: 40px 0 0 0;
-    text-transform: uppercase;
-}
-
- .job {
-    text-align: center;
-    margin: 0 0 40px 0;
-    text-transform: uppercase;
-}
-
-.section {
-    margin-bottom: 20px;
-}
-
-.right-title {
-    background: #2B826D;
-    padding: 5px 120px;
-    color: white;
-    margin: 40px 0 20px 0;
+    border-right: 10px solid var(--neon-purple) ;
 }
 
 .left-title {
     color: white;
     padding: 20px 10px 5px 20px;
+    position: relative;
+}
+
+.left-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+
+.left-title.red::after {
+    background-color: var(--neon-red);
+}
+
+.left-title.purple::after {
+    background-color: var(--neon-purple);
+}
+  
+.left-title.blue::after {
+    background-color: var(--neon-blue);
+}
+
+.right-column {
+    background-color: var(--bg-light );
+    max-width: 670px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.right-title {
+    padding: 5px 20px;
+    color: var(--bg-dark);
+    margin: 40px 0 20px 0;
 }
 
 .contacts-list, .education-list, .languages-list {
-    padding: 0;
-    margin: 0 10px 20px 40px;
     color: white;
 }
 
@@ -159,7 +203,7 @@ main {
 /*-------------- footer settings -------------*/
 footer {
     width: 100%;
-    background: #12342C;
+    background: var(--bg-dark);
     padding: 15px 0;
     display: flex;
     justify-content: space-around;
@@ -181,8 +225,8 @@ footer a {
     height: auto;
 }
 
-.github:hover {
+.github:hover, .logo:hover {
     text-decoration: underline;
     font-weight: bold;
-    box-shadow: 0 5px 10px -5px rgb(255, 255, 255);
+    box-shadow: 0 0 20px 5px var(--neon-purple);
 }
