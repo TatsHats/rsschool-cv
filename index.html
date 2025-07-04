@@ -5,63 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
 </head>
 
 <body>
+  <div class="page-wrapper">
     <header>
         <nav class="nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href="#contacts" class="nav-link">My Contact</a></li>
+                <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                 <li class="nav-item"><a href="#profile" class="nav-link">About Me</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                 <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">My projects</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">projects</a></li>
             </ul>
         </nav>
-    </header>
 
-    <main>
-        <div class="left-column">
+        <div class="foto-name">
             <div class="foto">
                 <img src="assets/img/123.jpg" alt="Tatsiana Hatskaya photo">
             </div>
+            <div class="name-blok">
+                <h1 class="name">Tatsiana Hatskaya</h1>
+                <h3 class="job">Junior front-end developer</h3>
+            </div>
+        </div>
+    </header>
 
-            <section class="section" id="contacts">
-                <h2 class="left-title">My contact info</h2>
+    <main>
+        <section class="left-column">
+            <div class="left-blok" id="contacts">
+                <h2 class="left-title">Contact info</h2>
                 <ul class="contacts-list">
                     <li>Vilnius, Lithuania</li>
                     <li>Telegram: @TatsHats</li>
                     <li>E-mail: 6642017@gmail.com</li>
                     <li>Discord: @tats_hats</li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="section" id="education">
+            <div class="left-blok" id="education">
                 <h2 class="left-title">Education</h2>
                 <ul class="education-list">
                     <li>Higher education in Belarusian State Economic University (2010)</li>
                     <li>The course "C# Developer Profession" in the itProger programming school (2023).</li>
                     <li>The course "Javascript/Front-End" in the Rolling Scopes School (06.2024-06.2025)</li>
+                    <li>The course "Angular" in the Rolling Scopes School (in progress)</li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="section" id="languages">
+            <div class="left-blok" id="languages">
                 <h2 class="left-title">Languages</h2>
                 <ul class="languages-list">
                     <li>Russian, Belarusian - native speaker</li>
-                    <li>English - A2 (B1 in progress)</li>
+                    <li>English - A2+ (B1 in progress)</li>
                     <li>Polish - A2</li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <div class="right-column">
-            <h1 class="name">Tatsiana Hatskaya</h1>
-            <h3 class="job">Junior front-end developer</h3>
+        <section class="right-column">
+            
 
-            <section class="section" id="profile">
+            <div class="right-blok" id="profile">
                 <h2 class="right-title">About Me</h2>
                 <div class="text-right-column">
                     <p>I have a higher education degree in economics. 
@@ -71,9 +78,9 @@
                         I am non-confrontational and easy to communicate with.
                     </p>
                 </div>
-            </section>
+            </div>
 
-            <section class="section" id="skills">
+            <div class="right-blok" id="skills">
                 <h2 class="right-title">My skills</h2>
                 <ul class="skills-list">
                     <li>Confident knowledge of HTML5 and CSS3 (+SASS/SCSS);</li>
@@ -82,11 +89,12 @@
                     <li>Version control with Git;</li>
                     <li>SQL and databases (MySQL, PostgreSQL);</li>
                     <li>Basic knowledge of C# (diploma available);</li>
-                    <li>Basic knowledge of C++ and MQL4.</li>
+                    <li>Basic knowledge of C++ and MQL4;</li>
+                    <li>Confident knowledge of Figma and Canva.</li>
                 </ul>
-            </section>
+            </div>
 
-            <section class="section" id="projects">
+            <div class="right-blok" id="projects">
                 <h2 class="right-title">My projects</h2>
                 <p class="text-right-column">Examples of completed projects:</p>
                 <div class="projects-example">
@@ -95,16 +103,19 @@
                     <video class="video-example" src="./assets/video/ScreenRecorderProject8.mp4" controls></video>
                     <video class="video-example" src="./assets/video/ScreenRecorderProject9.mp4" controls></video>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <a class="github" href="https://github.com/TatsHats">GitHub page</a>
-        <a class="logo" href="https://rs.school/courses/javascript-ru">
-            <img src="assets/img/logo-RS.png" alt="logo Rolling Scopes School">
+        <a class="github" href="https://github.com/TatsHats">
+            <img src="/assets/img/logo-gh.png" alt="github image">
         </a>
-        <p>2024</p>
+        <p>2025</p>
+        <a class="logo" href="https://rs.school/courses/javascript-ru">
+            <img src="assets/img/logo-rs.png" alt="logo Rolling Scopes School">
+        </a>
     </footer>
+  </div>
 </body>
 </html>
