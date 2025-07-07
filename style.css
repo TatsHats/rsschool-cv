@@ -60,6 +60,7 @@ header::after {
     padding: 20px 0;
     text-transform: uppercase;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .nav-list {
@@ -85,7 +86,6 @@ header::after {
 .nav-link:hover {
     text-decoration: underline;
     color: var(--neon-purple);
-    font-weight: bold;
     box-shadow: 0 5px 10px -5px var(--neon-purple);
 }
 
@@ -140,29 +140,41 @@ main {
 
 .left-title {
     color: white;
-    padding: 20px 10px 5px 20px;
+    padding: 20px 10px 5px 10px;
     position: relative;
 }
 
-.left-title::after {
+.left-title::after, .right-title::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 3px;
+    height: 2px;
 }
 
-.left-title.red::after {
+.left-title.red::after, .right-title.red::after {
     background-color: var(--neon-red);
+    box-shadow:
+        0 1px 10px var(--neon-red),
+        0 1px 20px var(--neon-red),
+        0 1px 30px var(--neon-red);
 }
 
-.left-title.purple::after {
+.left-title.purple::after, .right-title.purple::after {
     background-color: var(--neon-purple);
+    box-shadow:
+        0 1px 10px var(--neon-purple),
+        0 1px 20px var(--neon-purple),
+        0 1px 30px var(--neon-purple);
 }
   
-.left-title.blue::after {
+.left-title.blue::after, .right-title.blue::after {
     background-color: var(--neon-blue);
+    box-shadow:
+        0 1px 10px var(--neon-blue),
+        0 1px 20px var(--neon-blue),
+        0 1px 30px var(--neon-blue);
 }
 
 .right-column {
@@ -173,9 +185,10 @@ main {
 }
 
 .right-title {
-    padding: 5px 20px;
     color: var(--bg-dark);
     margin: 40px 0 20px 0;
+    position: relative;
+    padding-bottom: 5px;
 }
 
 .contacts-list, .education-list, .languages-list {
@@ -186,19 +199,32 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 16px;
-    margin: 20px 0;
+    gap: 10px;
+    margin: 0;
 }
 
 .video-example {
-    width: 400px;
+    width: 280px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-.text-right-column {
-    margin: 0 20px;
+.project {
+    display: flex;
+    flex-direction: column-reverse;
 }
+
+.project a {
+    text-decoration: none;
+    color: var(--bg-dark);
+    margin: 10px;
+    font-size: 18px;
+}
+.project a:hover {
+    text-decoration: underline;
+    color: var(--neon-purple);
+}
+
 
 /*-------------- footer settings -------------*/
 footer {
@@ -207,6 +233,7 @@ footer {
     padding: 15px 0;
     display: flex;
     justify-content: space-around;
+    border-top: 3px solid var(--neon-purple);
 }
 
 footer p {
