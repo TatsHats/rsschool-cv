@@ -52,7 +52,7 @@ header::after {
     background-color: var(--neon-purple);
     right: 0;
     bottom: 0;
-  }
+}
 
 .nav {
     display: flex;
@@ -223,6 +223,13 @@ main {
 .project a:hover {
     text-decoration: underline;
     color: var(--neon-purple);
+}
+
+.right-column pre {
+    font-size: 14px;
+    border: 1px solid var(--bg-dark);
+    padding: 20px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 

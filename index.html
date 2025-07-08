@@ -35,7 +35,7 @@
 
     <main>
         <section class="left-column">
-            <div class="left-blok" id="contacts">
+            <div id="contacts">
                 <h2 class="left-title blue">Contact info</h2>
                 <ul class="contacts-list">
                     <li>Vilnius, Lithuania</li>
@@ -45,7 +45,7 @@
                 </ul>
             </div>
 
-            <div class="left-blok" id="education">
+            <div id="education">
                 <h2 class="left-title purple">Education</h2>
                 <ul class="education-list">
                     <li>Higher education in Belarusian State Economic University (2010)</li>
@@ -55,7 +55,7 @@
                 </ul>
             </div>
 
-            <div class="left-blok" id="languages">
+            <div id="languages">
                 <h2 class="left-title red">Languages</h2>
                 <ul class="languages-list">
                     <li>Russian, Belarusian - native speaker</li>
@@ -66,19 +66,19 @@
         </section>
 
         <section class="right-column">
-            <div class="right-blok" id="profile">
+            <div id="profile">
                 <h2 class="right-title blue">About Me</h2>
                 <div class="text-right-column">
-                    <p>I have a higher education degree in economics. 
-                        <br>I possess excellent computer skills, learn quickly, and 
-                        have strong oral and written communication abilities. 
-                        I approach any assigned tasks with responsibility and care. 
+                    <p>I have a higher education degree in economics.
+                        <br>I possess excellent computer skills, learn quickly, and
+                        have strong oral and written communication abilities.
+                        I approach any assigned tasks with responsibility and care.
                         <br>I am non-confrontational and easy to communicate with.
                     </p>
                 </div>
             </div>
 
-            <div class="right-blok" id="skills">
+            <div id="skills">
                 <h2 class="right-title purple">My skills</h2>
                 <ul class="skills-list">
                     <li>Confident knowledge of HTML5 and CSS3 (+SASS/SCSS);</li>
@@ -92,7 +92,7 @@
                 </ul>
             </div>
 
-            <div class="right-blok" id="projects">
+            <div id="projects">
                 <h2 class="right-title red">My projects</h2>
                 <div class="projects-example">
                     <div class="project">
@@ -112,14 +112,39 @@
                         <a href="https://tatshats.github.io/christmas-shop-website/">Christmas - Website</a>
                     </div>
                     <div class="project">
-                        <video class="video-example" src="" controls></video>
+                        <video class="video-example" src="#" controls></video>
                         <a href="https://tatshats.github.io/decision-making-tool-app/">Decision making tool - App</a>
                     </div>
                     <div class="project">
-                        <video class="video-example" src="" controls></video>
+                        <video class="video-example" src="#" controls></video>
                         <a href="https://stolen-art.netlify.app/" title="Works through the server, so the catalog may be inactive">Stolen Art - Website (teamwork)</a>
                     </div>
                 </div>
+            </div>
+
+            <div>
+                <h2 class="right-title blue">Example code</h2>
+                <pre>
+grid.addEventListener('click', (event) => {
+    playGridClickSound();
+    if (!gameIsOn) return;
+
+    if (firstClick) {
+        startTimer();
+        firstClick = false;
+    }
+
+    if (event.target.classList.contains('cell')) {
+        const currentColor = getComputedStyle(event.target).Color;
+        if (currentColor === 'rgb(255, 255, 255)') {
+            event.target.style.backgroundColor = 'rgb(0, 0, 0)';
+        } else {
+            event.target.style.backgroundColor = 'white';
+        }
+        checkField();
+    }
+});
+                </pre>
             </div>
         </section>
     </main>
