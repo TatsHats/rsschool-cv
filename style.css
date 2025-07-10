@@ -35,7 +35,7 @@ html {
 /*-------------- header settings -------------*/
 header {
     width: 100%;
-    background-image: url('/assets/img/backgr.jpg');
+    background-image: url('assets/img/backgr.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
