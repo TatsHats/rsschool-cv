@@ -135,7 +135,27 @@ main {
     width: 400px;
     background: var(--bg-dark);
     box-sizing: border-box;
-    border-right: 10px solid var(--neon-purple) ;
+    border-right: 10px solid var(--neon-purple);
+}
+
+.left-column ul li {
+    list-style: none; 
+    color: white;
+    margin-bottom: 4px;
+}
+
+.left-column ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+.left-column ul li a:hover {
+    color: var(--neon-purple);
+}
+
+.left-column ul li span {
+
+    margin-left: 10px;
 }
 
 .left-title {
@@ -212,6 +232,7 @@ main {
 .project {
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 20px;
 }
 
 .project a {
