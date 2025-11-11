@@ -6,6 +6,7 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -37,21 +38,33 @@
         <section class="left-column">
             <div id="contacts">
                 <h2 class="left-title blue">Contact info</h2>
-                <ul class="contacts-list">
-                    <li>Vilnius, Lithuania</li>
-                    <li>Telegram: @TatsHats</li>
-                    <li>E-mail: 6642017@gmail.com</li>
-                    <li>Discord: @tats_hats</li>
-                </ul>
+                <ul>
+                    <li>
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Vilnius, Lithuania</span>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-telegram"></i>
+                      <a href="https://t.me/TatsHats" target="_blank">@TatsHats</a>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <a href="mailto:6642017@gmail.com">6642017@gmail.com</a>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-discord"></i>
+                      <a href="https://discordapp.com/users/tats_hats" target="_blank">@tats_hats</a>
+                    </li>
+                  </ul>
             </div>
 
             <div id="education">
                 <h2 class="left-title purple">Education</h2>
                 <ul class="education-list">
+                    <li>The course "Angular" in the RS School (2025)</li>
+                    <li>The course "JS/TS Front-End" in the RS School (06.2024-06.2025)</li>
+                    <li>The course "C# Developer" in the itProger school (2023).</li>
                     <li>Higher education in Belarusian State Economic University (2010)</li>
-                    <li>The course "C# Developer Profession" in the itProger programming school (2023).</li>
-                    <li>The course "Javascript/Front-End" in the Rolling Scopes School (06.2024-06.2025)</li>
-                    <li>The course "Angular" in the Rolling Scopes School (in progress)</li>
                 </ul>
             </div>
 
@@ -59,21 +72,24 @@
                 <h2 class="left-title red">Languages</h2>
                 <ul class="languages-list">
                     <li>Russian, Belarusian - native speaker</li>
-                    <li>English - A2+ (B1 in progress)</li>
+                    <li>English - A2/B1 (in progress)</li>
                     <li>Polish - A2</li>
+                    <li>Lithuanian - A1 (in progress)</li>
                 </ul>
             </div>
         </section>
 
+        
         <section class="right-column">
             <div id="profile">
                 <h2 class="right-title blue">About Me</h2>
                 <div class="text-right-column">
-                    <p>I have a higher education degree in economics.
-                        <br>I possess excellent computer skills, learn quickly, and
-                        have strong oral and written communication abilities.
-                        I approach any assigned tasks with responsibility and care.
-                        <br>I am non-confrontational and easy to communicate with.
+                    <p>Successfully completed a one-year "JS/TS Front-End" course at RS School. 
+                        Our final team project built with Angular was awarded 3rd place out of 
+                        nearly 100 projects! I have solid knowledge of JavaScript, TypeScript, 
+                        and Angular. I am computer-savvy and quick to learn new technologies and 
+                        tools. I especially enjoy working on visual aspects and website development. 
+                        A strong team player — responsible, communicative, and highly motivated.
                     </p>
                 </div>
             </div>
@@ -84,7 +100,7 @@
                     <li>Confident knowledge of HTML5 and CSS3 (+SASS/SCSS);</li>
                     <li>Confident knowledge of JavaScript and TypeScript;</li>
                     <li>Confident knowledge of framework Angular.</li>
-                    <li>Version control with Git;</li>
+                    <li>Proficient in Git and version control workflows</li>
                     <li>SQL and databases (MySQL, PostgreSQL);</li>
                     <li>Basic knowledge of C# (diploma available);</li>
                     <li>Basic knowledge of C++ and MQL4;</li>
@@ -112,39 +128,12 @@
                         <a href="https://tatshats.github.io/christmas-shop-website/">Christmas - Website</a>
                     </div>
                     <div class="project">
-                        <video class="video-example" src="#" controls></video>
                         <a href="https://tatshats.github.io/decision-making-tool-app/">Decision making tool - App</a>
                     </div>
                     <div class="project">
-                        <video class="video-example" src="#" controls></video>
                         <a href="https://stolen-art.netlify.app/" title="Works through the server, so the catalog may be inactive">Stolen Art - Website (teamwork)</a>
                     </div>
                 </div>
-            </div>
-
-            <div>
-                <h2 class="right-title blue">Example code</h2>
-                <pre>
-grid.addEventListener('click', (event) =&gt; {
-    playGridClickSound();
-    if (!gameIsOn) return;
-
-    if (firstClick) {
-        startTimer();
-        firstClick = false;
-    }
-
-    if (event.target.classList.contains('cell')) {
-        const currentColor = getComputedStyle(event.target).Color;
-        if (currentColor === 'rgb(255, 255, 255)') {
-            event.target.style.backgroundColor = 'rgb(0, 0, 0)';
-        } else {
-            event.target.style.backgroundColor = 'white';
-        }
-        checkField();
-    }
-});
-                </pre>
             </div>
         </section>
     </main>
