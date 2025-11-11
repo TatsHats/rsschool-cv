@@ -1,1 +1,267 @@
-style SCC code
+/*---------- general page settings ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600&display=swap');
+
+:root {
+    --bg-dark: #131313;
+    --bg-light: #ffffff;
+    --neon-purple: #ed5ff7;
+    --neon-red: #ff6b95;
+    --neon-blue: #94cbff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.page-wrapper {
+    max-width: 1200px;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/*-------------- header settings -------------*/
+header {
+    width: 100%;
+    background-image: url('assets/img/backgr.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 65%;
+    background-color: var(--neon-purple);
+    right: 0;
+    bottom: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0 0 20px 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom: 3px solid var(--neon-purple);
+}
+
+.nav-item {
+    margin: 0 3.5%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: var(--neon-purple);
+    box-shadow: 0 5px 10px -5px var(--neon-purple);
+}
+
+.foto-name {
+    display: flex;
+    width: 100%;
+    align-items: end;
+    padding: 20px 20px 0 20px;
+}
+
+.foto {
+    padding: 10px 10px 5px 10px;
+    border-radius: 200px 200px 0 200px;
+    background-color: var(--neon-purple);
+    margin-right: 50px;
+}
+
+.foto img {
+    width: 360px;
+    height: auto;
+    padding: 0;
+    border-radius: 180px 180px 0 180px;
+}
+
+.name {
+    font-size: 3.3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ .job {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 120px;
+}
+
+
+/*--------------- main settings --------------*/
+main {
+    display: flex;
+    width: 100%;
+}
+
+.left-column {
+    padding: 20px 30px 20px 20px;
+    width: 400px;
+    background: var(--bg-dark);
+    box-sizing: border-box;
+    border-right: 10px solid var(--neon-purple) ;
+}
+
+.left-title {
+    color: white;
+    padding: 20px 10px 5px 10px;
+    position: relative;
+}
+
+.left-title::after, .right-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.left-title.red::after, .right-title.red::after {
+    background-color: var(--neon-red);
+    box-shadow:
+        0 1px 10px var(--neon-red),
+        0 1px 20px var(--neon-red),
+        0 1px 30px var(--neon-red);
+}
+
+.left-title.purple::after, .right-title.purple::after {
+    background-color: var(--neon-purple);
+    box-shadow:
+        0 1px 10px var(--neon-purple),
+        0 1px 20px var(--neon-purple),
+        0 1px 30px var(--neon-purple);
+}
+  
+.left-title.blue::after, .right-title.blue::after {
+    background-color: var(--neon-blue);
+    box-shadow:
+        0 1px 10px var(--neon-blue),
+        0 1px 20px var(--neon-blue),
+        0 1px 30px var(--neon-blue);
+}
+
+.right-column {
+    background-color: var(--bg-light );
+    max-width: 670px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.right-title {
+    color: var(--bg-dark);
+    margin: 40px 0 20px 0;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.contacts-list, .education-list, .languages-list {
+    color: white;
+}
+
+.projects-example {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin: 0;
+}
+
+.video-example {
+    width: 280px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.project {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.project a {
+    text-decoration: none;
+    color: var(--bg-dark);
+    margin: 10px;
+    font-size: 18px;
+}
+.project a:hover {
+    text-decoration: underline;
+    color: var(--neon-purple);
+}
+
+.right-column pre {
+    font-size: 14px;
+    border: 1px solid var(--bg-dark);
+    padding: 20px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+/*-------------- footer settings -------------*/
+footer {
+    width: 100%;
+    background: var(--bg-dark);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 3px solid var(--neon-purple);
+}
+
+footer p {
+    margin: 10px 0 0 0;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+.logo img, .github img {
+    width: 30px;
+    height: auto;
+    border: 1px solid var(--neon-blue);
+}
+
+.github:hover, .logo:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    box-shadow: 0 0 20px 2px var(--neon-purple);
+}

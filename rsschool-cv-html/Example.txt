@@ -1,9 +1,0 @@
-const joinNumbersRange = (firstNumber, lastNumber) => {
-    let result = '';
-    let i = ferstNumber;
-    while (i <= lastNumber) {
-        result = `${result}${i}`;
-        i = i + 1;
-    }
-    retern result;
-}
